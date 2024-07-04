@@ -1,0 +1,33 @@
+.container{
+    color: aliceblue;
+    background-color: aqua;
+    width: 100%;
+    min-height: 98vh;
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box{
+    width: 340px;
+    height: 640px;
+    background-color: beige;
+
+    .welcome{
+        color: black;
+        text-align: center;
+        font-size: 35px;
+        margin-top: 10%;
+    }
+
+    .gif {
+        margin-top: 10%;
+        img {
+          width: 340px; 
+          height: auto; 
+         
+        }
+      }
+}
