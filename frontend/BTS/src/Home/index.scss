@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
 .container{
     color: aliceblue;
-    background-color: aqua;
+    background-color: rgb(216, 220, 215);
     width: 100%;
-    min-height: 98vh;
+    min-height: 110vh;
     margin: auto;
     display:flex;
     align-items: center;
@@ -12,19 +16,22 @@
 
 .box{
     width: 340px;
-    height: 640px;
+    height: 650px;
     background-color: #fcfcff;
-    
+    border-radius: 12px;
 
     .welcome{
         color: black;
         text-align: center;
-        font-size: 35px;
-        margin-top: 10%;
+        font-size: 30px;
+        margin: 6%;
+        background-color: #d0d9d1;
+        border-radius: 20px;
+        padding: 5px;
     }
 
     .gif {
-        margin-top: 10%;
+        margin-top: 8%;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -40,7 +47,7 @@
         display:flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(226, 146, 233);
+        background-color: rgb(255, 255, 255);
         padding: 12px;
         border-radius: 8px;
 
@@ -69,11 +76,12 @@
           position: absolute;
           right: 2%;
           
+          
         }
         .btn{
           padding: 9px;
           width: 140px;
-          background-color: #71c563;
+          background-color: #49e42d;
           border: 1.5px solid rgb(91, 241, 32);
           color: #fcfcff;
           font-weight: bolder;
@@ -98,5 +106,20 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
             cursor: pointer; 
           }
+      }
+      .sign-up
+      {display: flex;
+       align-items: center;
+       justify-content: center;
+      background-color:rgb(255, 255, 255);
+      color:  black;
+      .link{
+        position:absolute;
+        left: 48%;
+        right:52%;
+        color: rgb(0, 72, 241);
+        
+       
+      }
       }
 }

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className='container'>
     <div className='box'>
-        <div className='welcome'>welcum!!!!!</div>
+        <div className='welcome'>Welcome to BTS!</div>
         <div className='gif'><img src={vid} alt="loading..." /></div>
 
         <div className='login'>
@@ -27,7 +27,7 @@ export default function Home() {
             <div style={{flex: 1, height: '1px', backgroundColor: 'GREY'}} />
 
             <div style={{padding: '0 2px'}}>
-            <p style={{width: '70px', textAlign: 'center',fontWeight: 'bold'}}>OR</p>
+            <p style={{width: '70px', textAlign: 'center',fontWeight: 'bold',color:'black'}}>OR</p>
             </div>
             <div style={{flex: 1, height: '1px', backgroundColor: 'GREY'}} /></div>
 
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
 
             <div className='sign-up'>
-                <p>ACCOUNT NAHI KA BHADVYA?<a href='#'>Join now</a></p>
+                <p>Don't have an account?<br></br><a class="link" href='#'>SignUp</a></p>
                 
             </div>
 
