@@ -64,6 +64,7 @@ export default function Login() {
             </div>
 
             <div className="google">
+              Login with
               <button
                 className="g-btn"
                 onClick={() => {
