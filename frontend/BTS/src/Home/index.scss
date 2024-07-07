@@ -108,18 +108,18 @@
           }
       }
       .sign-up
-      {display: flex;
-       align-items: center;
-       justify-content: center;
-      background-color:rgb(255, 255, 255);
-      color:  black;
+      { display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(255, 255, 255);
+        color:  black;
+
       .link{
-        position:absolute;
-        left: 48%;
-        right:52%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
         color: rgb(0, 72, 241);
-        
-       
+        cursor: pointer;
       }
       }
 }

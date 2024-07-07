@@ -2,8 +2,13 @@ import './index.scss'
 import vid from "../Assets/xyz.gif"
 import 'boxicons'
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
 
-export default function Home() {
+export default function Register() {
+
+    let navigate= useNavigate()
+
+
   return (
     <div className='container'>
     <div className='box'>
@@ -19,7 +24,7 @@ export default function Home() {
               <input type='text' placeholder='Password' required /><box-icon type='solid' name='lock-alt' color='#71c563'></box-icon>
             </div>
             <div className='input'>
-              <button type='submit' className='btn'>LOGIN</button>
+              <button type='submit' className='btn'>SIGN UP</button>
             </div>
 
 
@@ -38,7 +43,7 @@ export default function Home() {
             </div>
 
             <div className='sign-up'>
-                <p>Don't have an account?<br></br><a class="link" href='#'>SignUp</a></p>
+                <p>Already have an account?<br></br><a className="link" onClick={() => navigate("/")}>SignIn</a></p>
                 
             </div>
 
@@ -50,5 +55,6 @@ export default function Home() {
 
     </div>
     </div>
+ 
   )
 }
