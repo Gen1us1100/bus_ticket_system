@@ -34,7 +34,7 @@ export default function Register() {
               ></box-icon>
             </div>
             <div className="input">
-              <input type="text" placeholder="Password" required />
+              <input type="password" placeholder="Password" required />
               <box-icon type="solid" name="lock-alt" color="#71c563"></box-icon>
             </div>
             <div className="input">
