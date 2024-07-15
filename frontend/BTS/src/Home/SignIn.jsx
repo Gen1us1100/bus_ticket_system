@@ -9,7 +9,7 @@ export default function Login() {
 
   return (
     <div className="container">
-       <button className="btn"   onClick={() => navigate("/navbar")}>navigation</button>
+       <button className="btn"   onClick={() => navigate("/nav")}>navigation</button>
       <div className="box">
         <div className="welcome">Welcome to BTS!</div>
         <div className="gif">

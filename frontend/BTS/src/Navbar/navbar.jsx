@@ -3,9 +3,15 @@ import './navbar.scss'
 import { FaHome } from "react-icons/fa";
 import { IoTicketSharp } from "react-icons/io5";
 import { FaUserCircle } from "react-icons/fa";
-import './navbar.js'
+import { initializeNavbar } from './index';
+import { useEffect } from 'react';
 
 export default function Navbar() {
+
+  useEffect(() => {
+    const cleanup = initializeNavbar();
+    return cleanup;
+  }, []);
   return (
     <div className="container1">
       <div className="box1">
