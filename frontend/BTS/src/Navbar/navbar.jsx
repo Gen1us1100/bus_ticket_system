@@ -3,12 +3,13 @@ import './navbar.scss'
 import { FaHome } from "react-icons/fa";
 import { IoTicketSharp } from "react-icons/io5";
 import { FaUserCircle } from "react-icons/fa";
+import './navbar.js'
 
 export default function Navbar() {
   return (
     <div className="container1">
       <div className="box1">
-
+        <div className='xyz'>
         <div className="navigation">
 
             <ul>
@@ -41,9 +42,11 @@ export default function Navbar() {
                 <div className='indicator'></div>
             </ul>
         </div>
-
+        </div>
 
       </div>
     </div>
+
+    
   )
 }
