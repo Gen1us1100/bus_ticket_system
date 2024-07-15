@@ -64,7 +64,7 @@ export default function Login() {
             </div>
 
             <div className="google">
-              Login with
+              Login with 
               <button
                 className="g-btn"
                 onClick={() => {
@@ -73,6 +73,7 @@ export default function Login() {
               >
                 <FcGoogle size={25} />
               </button>
+              
             </div>
 
             <div className="sign-up">
