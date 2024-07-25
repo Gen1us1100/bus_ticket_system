@@ -1,4 +1,3 @@
-// src/Navbar/navbarLogic.js
 export function initializeNavbar() {
     const list = document.querySelectorAll('.list');
     function activeLink() {

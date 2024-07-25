@@ -31,7 +31,7 @@ export default function Navbar() {
               <li className={`list ${activeTab === "home" ? "active" : ""}`}>
                 <a href="#" onClick={() => setActiveTab("home")}>
                   <span className="icon">
-                    <FaHome color="#fff" />
+                    <FaHome  />
                   </span>
                   <span className="text">Home</span>
                 </a>
@@ -40,7 +40,7 @@ export default function Navbar() {
               <li className={`list ${activeTab === "tickets" ? "active" : ""}`}>
                 <a href="#" onClick={() => setActiveTab("tickets")}>
                   <span className="icon">
-                    <IoTicketSharp color="#fff" />
+                    <IoTicketSharp  />
                   </span>
                   <span className="text">Tickets</span>
                 </a>
@@ -49,7 +49,7 @@ export default function Navbar() {
               <li className={`list ${activeTab === "profile" ? "active" : ""}`}>
                 <a href="#" onClick={() => setActiveTab("profile")}>
                   <span className="icon">
-                    <FaUserCircle color="#fff" />
+                    <FaUserCircle  />
                   </span>
                   <span className="text">Profile</span>
                 </a>

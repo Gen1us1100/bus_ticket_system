@@ -1,5 +1,34 @@
 .text1 {
   color: black;
-  display: flex;
+  margin: 7%;
+  max-height: 581px;
+  display: flex;  
+  flex-wrap: wrap;
+  overflow-y: auto;
+  scrollbar-width: none;
   position: absolute;
+}
+
+.search-bar-container{
+  background-color: aquamarine;
+}
+.searchbar input{
+  width: 100%; 
+  padding: 5%;
+  outline: none;
+}
+
+.dropdown{
+  cursor: pointer;
+}
+.pass{
+  display: flex;
+  gap: 10px;
+}
+.pass-btn{
+  width: 100px;
+  padding: 5%;
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius: 12px;
 }
