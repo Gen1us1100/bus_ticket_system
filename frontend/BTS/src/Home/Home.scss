@@ -2,33 +2,111 @@
   color: black;
   margin: 7%;
   max-height: 581px;
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
   scrollbar-width: none;
   position: absolute;
 }
 
-.search-bar-container{
-  background-color: aquamarine;
-}
-.searchbar input{
-  width: 100%; 
-  padding: 5%;
-  outline: none;
+.from-to {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
-.dropdown{
-  cursor: pointer;
+.search-bar-container {
+  margin-bottom: 20px;
+  position: relative;
 }
-.pass{
+
+
+.searchbar input {
+  width: 92%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+
+  &:focus {
+    border-color: #3bab40;
+  }
+}
+
+.dropdown {
+  display: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  width: 99%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  max-height: 190px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2px;
+}
+
+.searchbar input:focus + .dropdown,
+.dropdown.show {
+  display: block;
+}
+
+.dropdown-row {
+  padding: 10px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+.date{
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 93%;
+  padding: 3%;
+
+  &:focus {
+    border-color: #3bab40;
+  }
+}
+.price-display {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.pass {
   display: flex;
   gap: 10px;
+  margin-top: 20px;
 }
-.pass-btn{
+
+.pass-btn {
   width: 100px;
-  padding: 5%;
-  background-color:#ffffff;
-  border: 1px solid #000000;
-  border-radius: 12px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #888888;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+
+  .icon4{
+    color: #3bab40
+  }
+
+  &:hover {
+    background-color: #3bab40;
+    color: #ffffff;
+    border-color: #3bab40;
+  }
+  &:hover .icon4{
+    color: #ffffff;
+  }
 }
