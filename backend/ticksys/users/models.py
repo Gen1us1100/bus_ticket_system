@@ -8,14 +8,14 @@ class CustomUser(AbstractUser):
     pfpLink = models.TextField()
     balance = models.IntegerField(default=0)
        
-class Passes():
+class Passes(models.Model):
     uid=models.ForeignKey(CustomUser,on_delete=models.CASCADE)
     PassID=models.IntegerField()
     Price=models.IntegerField()
     expiry=models.DateTimeField()
     QRImage=models.TextField()
 
-class Tickets():
+class Tickets(models.Model):
     uid=models.ForeignKey(CustomUser,on_delete=models.CASCADE)
     TicketID=models.IntegerField()
     SourceStop=models.TextField()
