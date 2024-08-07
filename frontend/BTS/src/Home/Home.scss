@@ -110,3 +110,23 @@
     color: #ffffff;
   }
 }
+
+.btn-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.tkt{
+  width: 95%;
+  padding: 3%;
+  color: white;
+  cursor: pointer;
+  background-color: #3bab40;
+  border: 1px solid #3bab40;
+  border-radius: 8px;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease-in-out;
+}

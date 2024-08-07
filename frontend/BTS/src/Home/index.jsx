@@ -102,6 +102,10 @@ export default function Home() {
         {price && <div className="price-display">{price}</div>}
       </div>
 
+      <div className="btn-box">
+        <button className="tkt">Buy Ticket</button>
+      </div>
+
       <div className="pass">
         <button className="pass-btn"><IoTicket size={20} className="icon4"/><br />Daily<br /> Pass</button>
         <button className="pass-btn"><IoTicket size={20} className="icon4"/><br />Monthly<br /> Pass</button>
