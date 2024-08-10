@@ -40,8 +40,7 @@ export default function Register() {
       });
 
       if (response.status === 201) {
-        console.log('Registration successful response:', response);
-        toast.success('Registration successful! You can now log in.');
+        toast.error('Registration successful! You can now log in.');
         console.log('Registration successful, navigating...');
         navigate('/nav');
       }
@@ -121,7 +120,7 @@ export default function Register() {
           </form>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer  />
     </div>
   );
 }
