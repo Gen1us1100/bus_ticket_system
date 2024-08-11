@@ -5,6 +5,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { useState } from "react";
 import Home from "../Home";
 import Ticket from "../Ticket/Ticket";
+import Profile from "../Profile/Profile";
 
 export default function Navbar() {
   const [activeTab, setActiveTab] = useState("home");
@@ -16,7 +17,7 @@ export default function Navbar() {
       case "tickets":
         return <Ticket />;
       case "profile":
-        return <div className="text1">This is the Profile content</div>;
+        return <Profile />;
       default:
         return null;
     }
