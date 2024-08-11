@@ -40,7 +40,8 @@ export default function Register() {
       });
 
       if (response.status === 201) {
-        toast.error('Registration successful! You can now log in.');
+        localStorage.setItem('username', formData.fullName);
+        alert('Registration successful! You can now log in.');
         console.log('Registration successful, navigating...');
         navigate('/nav');
       }

@@ -9,6 +9,8 @@ export default function Home() {
   const [toValue, setToValue] = useState('');
   const [price, setPrice] = useState(null);
 
+  const username = localStorage.getItem('username') || 'user';
+
   const uniqFrom = Array.from(new Set(data.map(item => item.From)));
   const uniqTo = Array.from(new Set(data.map(item => item.To)));
 
@@ -43,7 +45,7 @@ export default function Home() {
 
   return (
     <div className="text1"><FaBus />pmpml
-      <h1>hey user</h1>
+      <h1>hey {username}</h1>
       <div className="homeBox">
         <h1 className="from-to">From</h1>
         <div className="search-bar-container">
